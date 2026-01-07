@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', 'Cairo', sans-serif;
+    background: #050814;
+    color: #ffffff;
+}
+
+/* HERO */
+.hero {
+    position: relative;
+    height: 100vh;
+    background: url("banner.jpg") center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        180deg,
+        rgba(6, 9, 20, 0.85),
+        rgba(6, 9, 20, 0.95)
+    );
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+}
+
+.logo {
+    width: 120px;
+    border-radius: 50%;
+    margin-bottom: 30px;
+    box-shadow: 0 0 30px rgba(255,255,255,0.15);
+}
+
+.hero h1 {
+    font-size: 56px;
+    font-weight: 700;
+}
+
+.hero p {
+    font-size: 18px;
+    color: #b7bddb;
+    margin: 12px 0 35px;
+}
+
+/* BUTTONS */
+.btn {
+    padding: 14px 40px;
+    border-radius: 35px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s ease;
+    display: inline-block;
+}
+
+.btn.main {
+    background: #5865F2;
+    color: #fff;
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 30px rgba(88,101,242,0.35);
+}
+
+/* ABOUT */
+.about-wrapper {
+    padding: 100px 10%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+}
+
+.box {
+    background: #0d1225;
+    padding: 35px;
+    border-radius: 22px;
+    box-shadow: 0 0 35px rgba(88,101,242,0.15);
+}
+
+.box h2 {
+    color: #ffffff;
+    margin-bottom: 18px;
+}
+
+.box p {
+    color: #c9cde6;
+    line-height: 1.8;
+}
+
+.about-img {
+    width: 100%;
+    margin-top: 25px;
+    border-radius: 18px;
+    box-shadow: 0 0 25px rgba(0,0,0,0.5);
+}
+
+.rtl {
+    direction: rtl;
+    text-align: right;
+}
+
+/* CTA */
+.cta {
+    padding: 90px 20px;
+    text-align: center;
+    background: linear-gradient(135deg, #4151ff, #3c42f5);
+}
+
+.cta h2 {
+    font-size: 32px;
+    margin-bottom: 30px;
+}
+
+.cta-btn {
+    background: rgba(255,255,255,0.15);
+    color: #fff;
+    font-size: 20px;
+    padding: 18px 55px;
+    border: 2px solid rgba(255,255,255,0.4);
+}
+
+.copyright {
+    margin-top: 25px;
+    font-size: 14px;
+    opacity: 0.8;
+}
